@@ -25,7 +25,7 @@ git clone git@github.com:RobertBerger/meta-python2.git
 
 cd meta-python2
 
-git remote add official-upstream git://github.com/Wind-River/meta-python2
+git remote add official-upstream git://git.openembedded.org/meta-python2
 
 git fetch official-upstream
 
@@ -35,14 +35,14 @@ git branch -a
 
 syntax: git fetch url-to-repo branchname:refs/remotes/origin/branchname
 
-git fetch git://github.com/Wind-River/meta-python2 master:refs/remotes/origin/master-as-dunfell
+git fetch git://git.openembedded.org/meta-python2 dunfell:refs/remotes/origin/dunfell
 
 6) Update from upstream:
 git co master
 >> git remote -v
 
-official-upstream       git://github.com/Wind-River/meta-python2 (fetch)
-official-upstream       git://github.com/Wind-River/meta-python2 (push)
+official-upstream       git://git.openembedded.org/meta-python2 (fetch)
+official-upstream       git://git.openembedded.org/meta-python2 (push)
 origin  git@github.com:RobertBerger/meta-python2.git (fetch)
 origin  git@github.com:RobertBerger/meta-python2.git (push)
 
@@ -52,7 +52,7 @@ remote: Compressing objects: 100% (1273/1273), done.
 remote: Total 4043 (delta 3130), reused 3632 (delta 2727)
 Receiving objects: 100% (4043/4043), 721.50 KiB | 402.00 KiB/s, done.
 Resolving deltas: 100% (3130/3130), completed with 502 local objects.
-From git://github.com/Wind-River/meta-python2
+From git://git.openembedded.org/meta-python2
    62591d9..e758547  master     -> official-upstream/master
  + 2942327...a382678 master-next -> official-upstream/master-next  (forced update)
    a3fa5ce..6a1f33c  morty      -> official-upstream/morty
